@@ -1,16 +1,32 @@
 // when in kotlin 
 // in place of switch we have when 
 
-fun main(args : Array<String>)
-{
-    val choice = 10 
-    when(choice)
-    {
-        10 -> print("10")
-        11 -> print("11")
-        else ->
-        {
-            print("enter valid choice")
-        }
+fun main(args: Array<String>) {
+
+    val a = 12
+    val b = 5
+
+    println("Enter operator either +, -, * or /")
+    val operator = readLine()
+
+    val result = when (operator) {
+        "+" -> a + b
+        "-" -> a - b
+        "*" -> a * b
+        "/" -> a / b
+        else -> "$operator operator is invalid operator."
     }
+
+    println("result = $result")
 }
+
+
+
+    
+        
+      
+       
+        
+        
+        
+    
